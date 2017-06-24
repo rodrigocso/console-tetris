@@ -1,0 +1,6 @@
+T = Blue;
+S = Yellow;
+O = Cyan;
+I = Red;
+J = White;
+L = Magenta;

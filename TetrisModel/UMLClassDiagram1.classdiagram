@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2af5c6d1-7a7c-4506-be7e-c04d8dc17da4" name="UMLClassDiagram1" linkedPackageId="ae793ff1-8c82-41ca-b63b-66211e5aabb2" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6a96350c-5d27-4acb-bddf-8338e6a8bc66">
+      <profileInstance Id="4efb345b-e850-4cf3-96e1-3b73506154fd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b002a4fa-cd7c-4f8e-a380-1b1f57b889a2">
+      <profileInstance Id="ff51d509-ee86-49f6-8dc3-37ff2df69204" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ddea72d4-d71f-451d-babc-a27d90f748ef" name="Tetris" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="202200a0-1a06-4ca5-956f-38ea6001a720" />
+        <ownedAttributesInternal>
+          <property Id="40331d9a-929d-467c-8c20-ef8317ad15b4" name="board" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="562c6bf9-a934-4127-99cc-50eace8f9a7d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7434f2d3-768e-4865-a97e-b5f711da3d45" LastKnownName="Board" />
+            </type_NamedElement>
+          </property>
+          <property Id="0d1d0591-02fb-4d73-867f-b73a3d60b14b" name="TimeStep" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="true" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dca79927-9877-4f4e-abed-8b3c6ff95490" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5649303d-fd15-45a6-a3b8-596efbc0d6f7" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="538ef347-6b7a-4a7c-9da1-72f509800e27" name="StartGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="25751a9e-b7c3-4232-ba17-6e7fe73ccd96" />
+          </operation>
+          <operation Id="209a525b-7547-44fd-bac0-7893db15ba0a" name="DisplayStartScreen" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="05ebd935-f27c-44d4-9c69-1b2c6a37f3e8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9f046a70-9455-4d40-a8f7-5f9c981f8fa0" name="Board" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e9fd95c7-859d-4aae-a8f2-0105654551d6" />
+        <targetEnds>
+          <association Id="bde955bd-3d3b-4881-a453-4e337f2cfd80" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="Tetris" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ddea72d4-d71f-451d-babc-a27d90f748ef" LastKnownName="Tetris" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="734a3fbf-0963-4734-8c93-232152ad37d5" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b27a5ca5-0374-46e8-9177-44b05b6bc4a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f1f816d-96e9-4841-852a-5fc6d3835b7d" name="Tetris" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e72d57a5-971e-4509-bb9e-f31f8df15f42" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="43370303-4195-4277-bbab-b058d6f42668" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="360b9bb9-a20e-4b22-9a7f-5c2c29a8b395" name="isGameOver" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="72dbee58-ec90-47ff-a993-a12d75dc5e22" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7ac9ef65-c785-45d7-b4df-6b1db3afee02" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="83dbf60f-b148-45f3-b6e9-6498c250e8d8" name="currShape" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="36d59435-67c8-47c5-bb5a-1f5eb66a263d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="57069a1b-a8f6-4c4d-9368-0cecc1085c47" LastKnownName="Shape" />
+            </type_NamedElement>
+          </property>
+          <property Id="c49b1707-65ed-4e9b-8131-9272a89be811" name="nextShape" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="369288c2-ec92-4628-90a2-b989d6fcc9f6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="09de5804-909b-4ac3-9aaa-856bd2f9bed6" LastKnownName="Shape" />
+            </type_NamedElement>
+          </property>
+          <property Id="bb6434fc-1a76-4381-9932-c4a41f6c093b" name="grid" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="64388ee3-c0ca-4849-8961-d4ff3a5c0f30" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5b8cdba0-a3af-4b20-a144-ad35896e2355" LastKnownName="Grid" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7bfbebc5-5660-4e27-bba5-caa160c84ac2" name="CheckUserInput" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d6dece68-aea3-4c5c-9f66-608fcf93976f" />
+          </operation>
+          <operation Id="263877aa-7472-4429-a9f8-e3e461eb4236" name="Update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="286fd305-3dd5-4b36-93d1-0c8cf1e99b57" />
+          </operation>
+          <operation Id="ad6426c1-0a58-40b7-85dd-c81b3c27292c" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a0e68c2e-11cf-4138-a18a-0ae3990bcbb5" />
+          </operation>
+          <operation Id="0e996a64-badf-492d-8aa5-6663a41a1aea" name="RemoveLine" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="81cb1610-1d99-4411-82e6-e5cb7fc98c40" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7434f2d3-768e-4865-a97e-b5f711da3d45" name="Board" isAbstract="false" isLeaf="false" cachedFullName="TetrisModel::Board">
+        <elementDefinition Id="e9fd95c7-859d-4aae-a8f2-0105654551d6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5649303d-fd15-45a6-a3b8-596efbc0d6f7" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="59105d16-f743-41a4-b398-e885ebc36819" name="Shape" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ee04f50c-8e13-48ba-8382-b78972d8e656" />
+        <targetEnds>
+          <association Id="5e16a0cb-0cd9-45f9-a0dc-d753cb898b35" isDerived="false" sourceEndRoleName="Shape" targetEndRoleName="Board" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9f046a70-9455-4d40-a8f7-5f9c981f8fa0" LastKnownName="Board" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f23b909a-3fcd-4713-a349-90a6856f77d4" name="Shape" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="2309539f-4eff-4c9a-8bac-97f6605b47e7" name="Lower" value="2">
+                      <elementDefinition Id="b4ba4d4f-8277-4524-809c-da98ffaafefb" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a2ba767e-5192-4fa4-b1cc-efee88ea3f10" name="Upper" value="2">
+                      <elementDefinition Id="f9aee0a0-a2b4-4131-86a3-bcaa7d1f35d7" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5b2dc697-1767-4181-b093-44d01a6cae12" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a316de89-7dd6-48b2-8fcf-be3460ee5179" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f56a4a0f-664b-4b79-9ff4-dd6484d089fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c5890f8c-ed1d-42bf-a8f8-4f34bf0ce588" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="dcedb180-584b-45c4-88a4-81b9b34470b6" name="rotation" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="788779cc-b843-4f7b-be17-c44281e81d31" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5649303d-fd15-45a6-a3b8-596efbc0d6f7" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="cae4f33b-ddcd-4711-8053-ff4bdb837832" name="isDead" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e9036f2b-dcfd-4a9c-9d6e-5abd64965f3e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7ac9ef65-c785-45d7-b4df-6b1db3afee02" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="d084ed5a-ba6f-4c1f-a594-05d00681c4b5" name="grid" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f1a1d5f-7a4f-4dc5-8ff0-0b453f43ec79" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5b8cdba0-a3af-4b20-a144-ad35896e2355" LastKnownName="Grid" />
+            </type_NamedElement>
+          </property>
+          <property Id="f1077944-be9e-455d-91fc-c3ccadc1d8d6" name="boardGrid" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e8388cb7-2fb5-44a3-82ca-56786c2b8c4e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5b8cdba0-a3af-4b20-a144-ad35896e2355" LastKnownName="Grid" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a82582fc-47f2-4a77-acf3-7039112064b0" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7e18292d-0bbb-4add-91c4-307b08a4a856" />
+          </operation>
+          <operation Id="06079806-1461-4c9d-9c5e-e9e01c460669" name="Rotate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c75164de-b526-44e8-80d4-936c2c6e28e1" />
+          </operation>
+          <operation Id="e6b064c2-69a2-4801-9f6d-17adb50eb83a" name="Move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d89c84a5-364a-4409-a0c9-88fe6f130e17" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7ac9ef65-c785-45d7-b4df-6b1db3afee02" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="57069a1b-a8f6-4c4d-9368-0cecc1085c47" name="Shape" isAbstract="false" isLeaf="false" cachedFullName="TetrisModel::Shape">
+        <elementDefinition Id="ee04f50c-8e13-48ba-8382-b78972d8e656" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="09de5804-909b-4ac3-9aaa-856bd2f9bed6" name="Shape" isAbstract="false" isLeaf="false" cachedFullName="TetrisModel::Shape">
+        <elementDefinition Id="ee04f50c-8e13-48ba-8382-b78972d8e656" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4e19120f-250b-4b5c-b15a-652d92c95b1c" name="Grid" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8d7c59ea-a1a2-46ed-81ae-dd153b274b28" />
+        <targetEnds>
+          <association Id="419ff628-a321-4382-8b68-6f0bc201407d" isDerived="false" sourceEndRoleName="Grid" targetEndRoleName="Board" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9f046a70-9455-4d40-a8f7-5f9c981f8fa0" LastKnownName="Board" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="970b639f-a65f-46d4-abc6-0a4089c292e1" name="Grid" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="732eeb5e-ec21-48d6-b2c7-4b61c8a36f5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58a2c811-1429-4620-9629-93d0c2ae8e66" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c139cc92-6604-44d9-953e-5c8e264e201e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="25d5961e-e766-4425-8df3-d59f08ce3c9e" />
+          </association>
+          <association Id="fc3c3d7d-eb02-4aff-80ed-6ad69f76362a" isDerived="false" sourceEndRoleName="Grid" targetEndRoleName="Shape" isLeaf="false" isAbstract="false">
+            <classMoniker Id="59105d16-f743-41a4-b398-e885ebc36819" LastKnownName="Shape" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b789bf81-6368-48a2-a41f-83b99e2ea267" name="Grid" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6ba277c5-5a9c-4ac8-b5fc-53140d69d7ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e5ab422-296d-41c9-8726-b12f2b6d69ef" name="Shape" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="14fc6c93-038f-48f3-ba5a-ef7150583376" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f2c02aa-faab-42c2-a1b9-ab5ebaaca17e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="8071c13c-d615-401f-b206-2b593d229616" name="top" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="ac46cc00-b935-4a5f-8abb-3c13e374d2cc" name="Lower" value="1">
+                <elementDefinition Id="8f83bced-4375-4f1f-b265-45d9ce42bf23" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="3254b33b-40b1-46ac-8308-b91ed180b6f1" name="Upper" value="1">
+                <elementDefinition Id="7b38b661-2750-4d03-8a5b-6fa976b9c5e6" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="80c494c1-7811-4594-b451-e883e156466c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ad55b991-933d-4e44-824d-4b6030676d04" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="10ded5ab-1042-4bba-9b42-8ab3b77497dd" name="left" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ee1e7e19-301d-4030-a090-9b2ccaea2a53" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5649303d-fd15-45a6-a3b8-596efbc0d6f7" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="99169649-6aed-4090-8953-1fc9913e1fa9" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="98b6e9ea-bba5-4832-9b6e-c08af9c52ebf" />
+          </operation>
+          <operation Id="847ee72e-a7b5-433a-b350-47f84581fb34" name="MergeGrid" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ec69e311-6471-48aa-988b-a358090c153a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="65a1be83-66f4-47ea-b0e6-9a2fcb672984" name="Grid" direction="In" isUnique="false">
+                  <elementDefinition Id="66ed78b4-e521-4ed6-89bc-d34a565057fb" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5b8cdba0-a3af-4b20-a144-ad35896e2355" name="Grid" isAbstract="false" isLeaf="false" cachedFullName="TetrisModel::Grid">
+        <elementDefinition Id="8d7c59ea-a1a2-46ed-81ae-dd153b274b28" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e23402ab-b134-4510-bbdb-15dbb663538a" name="Square" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db8a87a8-4f8e-49da-a947-ad497f09c58f" />
+        <targetEnds>
+          <association Id="5ad29618-40aa-4c45-8803-05702cfa0100" isDerived="false" sourceEndRoleName="Square" targetEndRoleName="Grid" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4e19120f-250b-4b5c-b15a-652d92c95b1c" LastKnownName="Grid" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb9fdfef-be25-416f-b076-a974b6691ac5" name="Square" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="828c8686-ee84-4a6c-9c8e-2b0e89ece263" name="Lower" value="*">
+                      <elementDefinition Id="49823219-2408-41ab-84b2-0382e393c058" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3173f3c9-16b0-4d52-824e-3e5b6bad118e" name="Upper" value="*">
+                      <elementDefinition Id="8062fe62-d911-4af3-a3e6-9e0fcef2fa06" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2e8701b2-0b60-49df-826b-d3b66cbef41e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7373613d-cdd0-4dd3-bdb8-838f290d9eaa" name="Grid" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1dd61e23-5281-46bd-9d6c-b90dd060d0ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b0928e42-d7fe-4a87-bbff-b360c6f57950" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="96b6b588-b932-4c42-883d-e44aeda15d30" name="color" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="14782fa2-d6ab-417b-b46a-d973831aafe2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e9bffb4b-1683-4204-979b-b466d30ab4fc" LastKnownName="ConsoleColor" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="086d9a48-1c90-409a-8dcd-02a38698eff2" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c4d1ac66-5475-4a78-a939-9629cf1ec57e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5097da15-bd7e-4b05-91bf-ef2e7f540af7" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="df36525b-8458-464e-81e2-c8dc1b7b6391" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d0273d1d-ee1e-4a48-8b5b-c8a872a080af" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="08af08a7-6520-4e74-8865-1405b66c160b" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e9bffb4b-1683-4204-979b-b466d30ab4fc" name="ConsoleColor" isAbstract="false" isLeaf="false" cachedFullName="ConsoleColor">
+        <elementDefinition Id="2e53c35b-2a1c-4b85-99c3-9922aa09e8f9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ad55b991-933d-4e44-824d-4b6030676d04" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e59a0065-6704-4efc-a972-e057a063faed" name="CollisionChecker" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="ea344797-a52b-4150-b6c7-4670b36c19da" name="utility" profile="StandardProfileL2">
+            <elementDefinition Id="e4650dec-f62e-48dd-8153-c867da702f11" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="316b008a-ac41-426f-a4cb-90d7394a9437" />
+        <targetEnds>
+          <association Id="8d22f35c-328c-47b8-99cb-c241b944fac3" isDerived="false" sourceEndRoleName="CollisionChecker" targetEndRoleName="Shape" isLeaf="false" isAbstract="false">
+            <classMoniker Id="59105d16-f743-41a4-b398-e885ebc36819" LastKnownName="Shape" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c35a6eb4-87ee-4d5e-9f80-2ce37cbe54be" name="CollisionChecker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0e75c7eb-084c-437b-b629-c0e194e41968" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0750d1e3-b392-478f-bd89-f4a32c8e1233" name="Shape" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2dafc446-55eb-40fc-948f-59a84c872bc3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="640cd6fe-ecd9-455b-9aea-00fb611c31f6" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="64d73776-d09e-4b24-be55-b9a64fab5a4c" name="IsCollision" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5b281b60-ff6d-41e8-9a33-9d0fdb08ddd9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0f1680c0-3b90-4a59-a815-a1a31d222f12" name="Grid b" direction="In" isUnique="false">
+                  <elementDefinition Id="78831167-99ca-44d9-b5cc-27ac11816517" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2c69b712-c1bf-420a-b068-6559c9ddca80" name="s" direction="In" isUnique="false">
+                  <elementDefinition Id="0e5a082c-6485-437f-9990-4d3859b66cd1" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="ae793ff1-8c82-41ca-b63b-66211e5aabb2" name="TetrisModel">
+    <elementDefinition Id="e32381fb-9f60-4eaf-89d2-acaa11c6137d" />
+  </package>
+</logicalClassDesignerModel>
